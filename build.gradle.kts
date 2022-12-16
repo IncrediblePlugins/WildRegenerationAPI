@@ -34,3 +34,20 @@ dependencies {
     compileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
     compileOnly("org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0")
 }
+
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "com.github.angeschossen"
+            artifactId = "WildRegenerationAPI"
+            version = "1.2.10"
+
+            from(components["java"])
+        }
+    }
+}
