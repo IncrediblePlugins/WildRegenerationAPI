@@ -47,7 +47,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.angeschossen"
             artifactId = "WildRegenerationAPI"
-            version = "1.2.10"
+            version = "1.2.13"
 
             from(components["java"])
         }
