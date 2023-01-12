@@ -11,11 +11,11 @@ public class ChunkRegeneratedEvent extends Event {
     private final TrackedChunk trackedChunk;
 
     public ChunkRegeneratedEvent(TrackedChunk chunk) {
-    this.trackedChunk = chunk;
+        this.trackedChunk = chunk;
     }
 
     @NotNull
-    public TrackedChunk getChunk(){
+    public TrackedChunk getChunk() {
         return trackedChunk;
     }
 
