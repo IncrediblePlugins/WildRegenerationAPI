@@ -1,11 +1,11 @@
-package me.angeschossen.wildregeneration.api.world;
+package me.angeschossen.wildregeneration.api.world.chunk.util;
 
 
 public class ChunkKeyPair {
 
     public final int x, z;
 
-    public ChunkKeyPair(int x, int z) {
+    private ChunkKeyPair(int x, int z) {
         this.x = x;
         this.z = z;
     }
