@@ -1,10 +1,18 @@
 package me.angeschossen.wildregeneration.api.world.chunk.util;
 
 
+/**
+ * Stores position of a chunk.
+ */
 public class ChunkKeyPair {
 
     public final int x, z;
 
+    /**
+     * Create an instance of this position.
+     * @param x Chunk X
+     * @param z chunk Z
+     */
     private ChunkKeyPair(int x, int z) {
         this.x = x;
         this.z = z;

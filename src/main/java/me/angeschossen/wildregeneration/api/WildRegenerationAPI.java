@@ -15,8 +15,8 @@ public interface WildRegenerationAPI {
     /**
      * Get a world that tracks chunks for inactivity.
      *
-     * @param world World
-     * @return null, if this world doesn't use WildRegeneration.
+     * @param world the Bukkit world
+     * @return null, if this world doesn't use WildRegeneration
      */
     @Nullable
     TrackedWorld getWorld(@NotNull World world);
