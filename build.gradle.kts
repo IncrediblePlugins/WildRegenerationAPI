@@ -61,7 +61,7 @@ dependencies {
 }
 
 group = "com.github.angeschossen"
-version = "6.35.0"
+version = "1.5.0"
 description = "WildregenerationAPI"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
