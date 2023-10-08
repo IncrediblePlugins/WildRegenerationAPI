@@ -1,37 +1,40 @@
-# WildRegenerationAPI
-
 [![](https://jitpack.io/v/Angeschossen/WildRegenerationAPI.svg)](https://jitpack.io/#Angeschossen/WildRegenerationAPI)
 
-Include the API with Maven:
+### Javadoc
+https://jitpack.io/com/github/angeschossen/WildRegenerationAPI/latest/javadoc/
 
-```xml
-
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-
-<dependencies>
-<dependency>
-    <groupId>com.github.angeschossen</groupId>
-    <artifactId>WildRegenerationAPI</artifactId>
-    <version>INSERT VERSION HERE</version>
-    <scope>provided</scope>
-</dependency>
-</dependencies>
-```
-
-Include the API with Gradle:
-
+### API Usage Explained
+Include the API using Gradle:
 ```groovy
 repositories {
 	maven { url 'https://jitpack.io' }
 }
 dependencies {
-    compileOnly "com.github.angeschossen:WildRegenerationAPI:INSERT VERSION HERE"
+    compileOnly "com.github.angeschossen:WildRegenerationAPI:version"
 }
 ```
 
-Alternatively you can download the jar file from here: https://github.com/Angeschossen/WildRegenerationAPI/releases
+Include the API using Maven:
+```xml
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	</repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.angeschossen</groupId>
+        <artifactId>WildRegenerationAPI</artifactId>
+        <version>version</version>
+        <scope>provided</scope>
+    </dependency>
+</dependencies>
+```
+
+The API is accessible through an implementation of the ``WildRegenerationAPI`` interface.
+WildRegeneration needs to be loaded before this API can be used. It doesn't need to be enabled though.
+````
+WildRegenerationAPI api = WildRegenerationAPI.getInstance();
+````
