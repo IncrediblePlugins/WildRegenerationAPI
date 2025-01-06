@@ -2,6 +2,7 @@ package me.angeschossen.wildregeneration.api.events.chunk;
 
 import com.github.angeschossen.pluginframework.api.utils.Checks;
 import me.angeschossen.wildregeneration.api.world.chunk.TrackedChunk;
+import org.bukkit.Bukkit;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -18,16 +19,18 @@ public class ChunkRegenerateEvent extends Event implements Cancellable {
 
     /**
      * Create an instance of this event
+     *
      * @param chunk the chunk that is going to be regenerated
      */
     public ChunkRegenerateEvent(@NotNull TrackedChunk chunk) {
-        Checks.requireNonNull(chunk, "chunk");
+        super(!Bukkit.isPrimaryThread());
 
-        this.trackedChunk = chunk;
+        this.trackedChunk = Checks.requireNonNull(chunk, "chunk");
     }
 
     /**
      * Get the chunk.
+     *
      * @return chunk that is going to be regenerated
      */
     @NotNull
