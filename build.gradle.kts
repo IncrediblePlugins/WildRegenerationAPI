@@ -1,5 +1,5 @@
 group = "com.github.angeschossen"
-version = "1.5.0"
+version = "1.5.1"
 description = "WildregenerationAPI"
 
 
@@ -63,7 +63,7 @@ tasks {
 }
 
 dependencies {
-    shadow("com.github.Angeschossen:PluginFrameworkAPI:1.0.22")
+    shadow("com.github.Angeschossen:PluginFrameworkAPI:1.1.7")
     compileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
     compileOnly("org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0")
 }
